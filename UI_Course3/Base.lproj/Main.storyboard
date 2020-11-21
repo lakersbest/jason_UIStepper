@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIStepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4r-1f-YjP">
+                                <rect key="frame" x="20" y="91" width="90" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tYP-kD-R7o">
+                                <rect key="frame" x="20" y="128" width="374" height="345"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">讓我們互道一聲晚安　
+送走這匆匆的一天
+值得懷念的　請你珍藏　
+應該忘記的　莫再留戀
+讓我們互道一聲晚安　
+迎接那嶄新的明天
+把握那美好的前程　
+珍惜你錦繡的人生
+願你走進甜甜夢鄉　
+祝你有個寧靜的夜晚
+晚安　晚安　
+再說一聲　明天見</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-J9-mWg">
+                                <rect key="frame" x="197" y="335" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hr1-N7-hpP">
+                                <rect key="frame" x="20" y="134" width="374" height="4"/>
+                            </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wex-nv-Und">
+                                <rect key="frame" x="300" y="59" width="94" height="32"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <connections>
+                                    <action selector="sizeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="beN-fP-Esk"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9882534798" green="1" blue="0.099655106669999993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hr1-N7-hpP" firstAttribute="centerX" secondItem="tYP-kD-R7o" secondAttribute="centerX" id="1Pj-Ia-IgI"/>
+                            <constraint firstItem="r4r-1f-YjP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5pA-6s-Vr9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tYP-kD-R7o" secondAttribute="bottom" constant="306" id="CmA-cR-Fnt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r4r-1f-YjP" secondAttribute="trailing" constant="304" id="HHu-hG-C0Y"/>
+                            <constraint firstItem="Hr1-N7-hpP" firstAttribute="width" secondItem="tYP-kD-R7o" secondAttribute="width" id="Ita-OI-NHd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tYP-kD-R7o" secondAttribute="trailing" constant="20" id="LEN-fJ-0vq"/>
+                            <constraint firstItem="r4r-1f-YjP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="ONd-T0-imc"/>
+                            <constraint firstItem="jOJ-J9-mWg" firstAttribute="centerX" secondItem="tYP-kD-R7o" secondAttribute="centerX" id="S5M-uU-rza"/>
+                            <constraint firstItem="tYP-kD-R7o" firstAttribute="top" secondItem="r4r-1f-YjP" secondAttribute="bottom" constant="43" id="VeF-As-xXE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wex-nv-Und" secondAttribute="trailing" constant="20" id="Y4z-rf-bU1"/>
+                            <constraint firstItem="wex-nv-Und" firstAttribute="leading" secondItem="r4r-1f-YjP" secondAttribute="trailing" constant="190" id="YbW-2F-46R"/>
+                            <constraint firstItem="tYP-kD-R7o" firstAttribute="top" secondItem="wex-nv-Und" secondAttribute="bottom" constant="35" id="chS-tp-fPX"/>
+                            <constraint firstItem="Hr1-N7-hpP" firstAttribute="top" secondItem="tYP-kD-R7o" secondAttribute="top" id="e9n-G2-5N3"/>
+                            <constraint firstItem="jOJ-J9-mWg" firstAttribute="centerY" secondItem="tYP-kD-R7o" secondAttribute="centerY" id="fah-Kf-RtA"/>
+                            <constraint firstItem="tYP-kD-R7o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gEt-yf-3kJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="jOJ-J9-mWg" id="dPV-xf-FOI"/>
+                        <outlet property="bottomConstraint" destination="CmA-cR-Fnt" id="AQa-kY-Jcz"/>
+                        <outlet property="countLabel" destination="r4r-1f-YjP" id="Fcf-qr-xZN"/>
+                        <outlet property="progressView" destination="Hr1-N7-hpP" id="6rN-CK-eRm"/>
+                        <outlet property="stepper" destination="wex-nv-Und" id="lIk-KF-MQf"/>
+                        <outlet property="textView" destination="tYP-kD-R7o" id="eJR-vA-bEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
